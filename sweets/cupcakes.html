@@ -1,0 +1,17 @@
+---
+layout: sweets
+---
+
+<h1>Cupcakes</h1>
+<ul>
+    {% for sweets in site.pages %}
+    {% if sweet.type == 'cupcake' %}
+    <li>
+        <a href="{{site.baseurl}}{{sweet.url}}">
+            <img src="{{site.baseurl}}/images/{sweets.image}}" alt="" width="400">
+            {{sweets.title}}
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

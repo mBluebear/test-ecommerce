@@ -1,0 +1,23 @@
+#search input[type="text"] {
+
+    background-color: #ffffff;
+    border: 2px solid #ff1a2c;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    box-shadow: inset 0px 0px 3px #ff928d;
+    width: 100%;
+    max-width: 18em;
+
+}
+
+@media only screen and (min-width:60em) {
+
+    #search {
+        text-align: right;
+    }
+
+    #search input[type="text"] {
+        margin-right: 45px;
+    }
+}

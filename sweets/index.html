@@ -1,0 +1,29 @@
+---
+layout: default
+title: Sweets
+---
+
+<div class="grid">
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-1-3">
+        <h1>Well come to Tasting Treats</h1>
+    </div>
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-2-3">
+        <p>Fresh baked straight from the oven</p>
+    </div>
+</div>
+
+{% include sweet-nav.html %}
+
+<ul>
+    {% for sweets in site.pages %}
+    {% if sweets.category == 'sweets' %}
+    <li>
+        <a href="{{site.baseurl}}{{sweets.url}}">
+            <img src="{{site.baseurl}}/images/{{sweets.image}}" alt="" width="400">
+        {{sweets.title}}
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+

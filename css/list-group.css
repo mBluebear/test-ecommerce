@@ -1,0 +1,15 @@
+.list-group {
+	list-style-type: none;
+}
+
+.list-group-item {
+	display: block; /*stack on top of each other*/
+}
+
+.list-group-item::before {
+	content: "";
+}
+
+.list-group-item-inline {
+	display: inline-block; /*put them on the same line*/
+}

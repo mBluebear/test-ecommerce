@@ -1,0 +1,24 @@
+---
+layout: default
+title: sweets
+---
+
+<div class="grid">
+    <div class="unit unit-s-1 unit-m-1-2 unit-l-2-3">
+        <h1>Welcome to Tasty Treats!</h1>
+        <p>Have our all-natural gourmet cupcakes delivered to your home or office, or pick them up at one of our two convenient Ottawa locations!</p>
+    </div>
+</div>
+
+<ul>
+    {% for cupcakes in site.pages %}
+    {% if cupcakes.category == 'cupcakes' %}
+    <li>
+        <a href="{{site.baseurl}}{{.url}}">
+            <img src="{{site.baseurl}}/images/{{dino.image}}" alt="">
+            {{dino.title}}
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+.footer-links {
+    padding-left: 0px;
+
+}
+.footer-links li img {
+	max-width: 40px;
+}
+
+.footer-links li a {
+	border-bottom: none;
+}
+
+
